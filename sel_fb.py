@@ -10,16 +10,16 @@ driver = Chrome("C:\\Users\\q1217\\Desktop\\AI大數據課程\\R 與 python 機�
 driver.get("https://mbasic.facebook.com/")
 # 填寫帳號密碼
 # 帳號
-driver.find_element_by_id("m_login_email").send_keys("a60112222@yahoo.com")
+driver.find_element_by_id("m_login_email").send_keys("fb帳號")
 # 密碼
-driver.find_element_by_name("pass").send_keys("python123")
+driver.find_element_by_name("pass").send_keys("fb密碼")
 # 點擊登入
 driver.find_element_by_name("login").click()
 # 等待時間
 time.sleep(2)
 # 進入社團
 driver.get("https://mbasic.facebook.com/groups/498729124625585")
-
+#fb的公開社團或粉專很長更改位置，這程式比較適合用在私人社團
 # 模擬滑鼠滾動
 for j in range(2):
     time.sleep(0.5)
